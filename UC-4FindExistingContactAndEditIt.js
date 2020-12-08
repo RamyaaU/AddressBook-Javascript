@@ -139,11 +139,12 @@ function AddContact(firstName, lastName, address, city, state, zip, phoneNumber,
     }
 }
 
+//UC 4 - Edit contact method
 function Edit()
 {
     console.log("Hello, Welcome To Address Book Using Javascript!")
     //Adding contacts
-    console.log("-------------Adding contact-----------------");
+    console.log("----------------Adding contact-----------------");
     AddContact("Ramya","Uday","Vijaynagar","Bangalore","Karnataka","567678","91 9898989898","ramya@gmail.com");
     AddContact("Riya", "Wooj", "Nagarbhavi", "Mangalore", "Mumbai", "588678", "91 8765432345", "riya@gmail.com");
     AddContact("Disha", "Madan", "Graden", "Gubbi", "Andhra", "593678", "91 9842123456", "disha@gmail.com");
