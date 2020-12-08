@@ -1,28 +1,26 @@
-//UC1 - Create Contact class
-class Contact{
-
-    // constructor
-    // Spread operator used to provide multiple dynamic parameters to constructor
+class contact
+{
+    //constructor
     constructor(...params)
     {
-        this.firstName = params[0];
-        this.lastName = params[1];
-        this.address = params[2];
-        this.city = params[3];
-        this.state = params[4];
-        this.zip = params[5];
-        this.phoneNumber = params[6];
-        this.email = params[7];
+        this.firstName= params[0];
+        this.lastName= params[1];
+        this.address= params[2];
+        this.city= params[3];
+        this.state= params[4];
+        this.zip= params[5];
+        this.phoneNumber= params[6];
+        this.email= params[7];
     }
 
-    //getter and setter methods
+    //getter setters
     get firstName()
     {
         return this._firstName;
     }
     set firstName(firstName)
     {
-        this._firstName = firstName;
+        this._firstName= firstName;
     }
 
     get lastName()
@@ -31,7 +29,7 @@ class Contact{
     }
     set lastName(lastName)
     {
-        this._lastName = lastName;
+        this._lastName= lastName;
     }
 
     get address()
@@ -40,7 +38,7 @@ class Contact{
     }
     set address(address)
     {
-        this._address = address;
+        this._address= address;
     }
 
     get city()
@@ -49,25 +47,25 @@ class Contact{
     }
     set city(city)
     {
-        this._city = city;
+        this._city= city;
     }
-
+    
     get state()
     {
         return this._state;
     }
     set state(state)
     {
-        this._state = state;
+        this._state= state;
     }
 
     get zip()
     {
-        return this._city;
+        return this._zip;
     }
     set zip(zip)
     {
-        this._zip = zip;
+        this._zip= zip;
     }
 
     get phoneNumber()
@@ -76,7 +74,7 @@ class Contact{
     }
     set phoneNumber(phoneNumber)
     {
-        this.phoneNumber = phoneNumber;
+        this._phoneNumber= phoneNumber;
     }
 
     get email()
@@ -85,13 +83,13 @@ class Contact{
     }
     set email(email)
     {
-        this._email = email;
+        this._email= email;
     }
-
+    
     //To string method for displaying contacts
     toString()
     {
-        return "FirstName: " + this.firstName + "LastName: " + this.lastName + "Address : " + this.address + "City : " + this.city + "State : " + this.state + "Zip : " + this.zip + "PhoneNumber : " + this.phoneNumber + "Email : " + this.email;
-
+        return "First Name: " + this.firstName + " Last Name: " + this.lastName + " Address: " + this.address + " City: " + this.city 
+        + " State: " + this.state + " Zipcode: " + this.zip + " Phone Number: " + this.phoneNumber + " email: " + this.email; 
     }
 }
