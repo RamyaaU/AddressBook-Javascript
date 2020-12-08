@@ -123,13 +123,12 @@ class Contact{
     //To string method for displaying contacts
     toString()
     {
-        return "FirstName: " + this.firstName + "LastName: " + this.lastName + "Address : " + this.address + "City : " + this.city + "State : " + this.state + "Zip : " + this.zip + "PhoneNumber : " + this.phoneNumber + "Email : " + this.email;
+        return "FirstName: " + this.firstName + "\nLastName: " + this.lastName + "\nAddress : " + this.address + "\nCity : " + this.city + "\nState : " + this.state + "\nZip : " + this.zip + "\nPhoneNumber : " + this.phoneNumber + "\nEmail : " + this.email;
     }
 }
 
-
 try {
-    contact = new Contact("Akash","Singh","Mansarovar","Moradabad","UttarPradesh",674678,"91 9898989898","as@gmail.com");
+    contact = new Contact("Ramya","Uday","Vijaynagar","Bangalore","Karnataka",567678,"91 9898989898","ramya@gmail.com");
     console.log(contact.toString());
 }
 catch (e) {
