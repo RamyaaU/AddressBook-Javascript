@@ -130,6 +130,7 @@ class Contact{
 // UC 3 : New address book array to store contacts
 let addressBook = new Array();
 try {
+    console.log("Hello, Welcome To Address Book Using Javascript!")
     contact = new Contact("Ramya","Uday","Vijaynagar","Bangalore","Karnataka","567678","91 9898989898","ramya@gmail.com");
     //appends into array
     addressBook.push(contact);
